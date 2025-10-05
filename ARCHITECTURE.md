@@ -54,7 +54,7 @@ backend-parqueadero/
 
 ## Diagrama de Arquitectura
 
-```mermaid
+```
 graph TD
     Client[Cliente] --> API[Capa API]
     API --> Routes[Rutas /routes/api.php]
@@ -78,32 +78,37 @@ graph TD
         PHPUnit --> Unit[Pruebas Unitarias]
         Feature --> Controllers
         Unit --> Services
-    end## Componentes Principales
+    end
+```
+
+## Componentes Principales
 
 1. **Capa API**
-   - Endpoints REST API
-   - Autenticación JWT
-   - Laravel Sanctum para tokens API
+
+    - Endpoints REST API
+    - Autenticación JWT
+    - Laravel Sanctum para tokens API
 
 2. **Capa de Aplicación**
-   - Controladores para manejar peticiones
-   - Modelos para interacción con base de datos
-   - Proveedores de servicios para inicialización
+
+    - Controladores para manejar peticiones
+    - Modelos para interacción con base de datos
+    - Proveedores de servicios para inicialización
 
 3. **Capa de Base de Datos**
-   - Migraciones para estructura de base de datos
-   - Sembradores para datos iniciales
-   - Factories para datos de prueba
+
+    - Migraciones para estructura de base de datos
+    - Sembradores para datos iniciales
+    - Factories para datos de prueba
 
 4. **Capa de Pruebas**
-   - Pruebas de características para endpoints API
-   - Pruebas unitarias para lógica de negocio
-   - PHPUnit como marco de pruebas
+    - Pruebas de características para endpoints API
+    - Pruebas unitarias para lógica de negocio
+    - PHPUnit como marco de pruebas
 
 ## Características de Seguridad
 
-- Autenticación JWT para seguridad API
-- Laravel Sanctum para autenticación basada en tokens
-- Middleware CORS para peticiones de origen cruzado
-- Validación de entrada mediante validación de formularios de Laravel
-```
+-   Autenticación JWT para seguridad API
+-   Laravel Sanctum para autenticación basada en tokens
+-   Middleware CORS para peticiones de origen cruzado
+-   Validación de entrada mediante validación de formularios de Laravel
