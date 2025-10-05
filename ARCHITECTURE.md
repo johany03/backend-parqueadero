@@ -54,7 +54,7 @@ backend-parqueadero/
 
 ## Diagrama de Arquitectura
 
-```
+```mermaid
 graph TD
     Client[Cliente] --> API[Capa API]
     API --> Routes[Rutas /routes/api.php]
